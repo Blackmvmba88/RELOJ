@@ -220,3 +220,20 @@ design inputs, not test results or certification. Movement accuracy, pressure te
 sealing, comfort, tolerances, and manufacturing validation remain future modules.
 
 See [Core architecture](docs/architecture.md) and the [40 mm example](examples/classic-40mm.json).
+
+
+## ⌚ Parametric CAD adapter — v0.2
+
+RELOJ now generates deterministic OpenSCAD source from the validated
+`WatchSpec` model. The conceptual 3D model includes a case, bezel, dial,
+crystal, lugs, indices, and hands.
+
+```bash
+python -c "from reloj_core import WatchSpec; from reloj_core.cad import export_scad; export_scad(WatchSpec(), 'watch.scad')"
+openscad -o watch.stl watch.scad
+```
+
+OpenSCAD is required for the second command, not for generating the source.
+See [CAD documentation](docs/cad.md). This is **not** manufacturing CAD:
+STEP export, B-Rep solids, tolerances, water resistance, and mechanical
+validation remain unimplemented.
