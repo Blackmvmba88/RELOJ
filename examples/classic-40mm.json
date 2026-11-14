@@ -1,0 +1,19 @@
+{
+  "name": "RELOJ One — Classic",
+  "family": "dress",
+  "case_diameter_mm": 40.0,
+  "case_thickness_mm": 10.5,
+  "lug_to_lug_mm": 47.0,
+  "lug_width_mm": 20.0,
+  "bezel_width_mm": 2.0,
+  "crystal_thickness_mm": 1.5,
+  "water_resistance_m": 50,
+  "case_material": "316L stainless steel",
+  "crystal_material": "sapphire",
+  "strap_material": "leather",
+  "movement_type": "automatic",
+  "display": "analog",
+  "dial_color": "#111827",
+  "accent_color": "#D4AF37",
+  "notes": "Baseline concept; all dimensions are nominal design inputs."
+}
