@@ -178,3 +178,45 @@ RELOJ helps turn that story into shape, proportion, material, and meaning.
   <strong>⌚ RELOJ</strong><br>
   Intelligent Parametric Watchmaker
 </p>
+
+
+## 🧪 Executable core — v0.1
+
+The first runnable slice lives in `src/reloj_core`. It turns a JSON concept into a
+validated specification and a deterministic geometry report.
+
+### Requirements
+
+- Python 3.11+
+- No runtime third-party dependencies
+
+### Run
+
+```bash
+python -m pip install -e .
+python -m unittest discover -s tests -v
+reloj examples/classic-40mm.json
+```
+
+Without installing the CLI entry point:
+
+```bash
+PYTHONPATH=src python -m reloj_core.cli examples/classic-40mm.json
+```
+
+### What is implemented
+
+- Immutable watch specification with strict unknown-field rejection
+- Screening validation for dimensions, proportions, family, movement, and display
+- Warnings separated from blocking errors
+- Derived dial opening, projected area, cylindrical envelope volume, and lug ratio
+- JSON CLI report with meaningful exit codes
+
+### Engineering boundary
+
+This is a concept-screening engine, not production CAD. Geometry is first-order and
+the cylindrical case volume is only a comparison metric. Water-resistance values are
+design inputs, not test results or certification. Movement accuracy, pressure testing,
+sealing, comfort, tolerances, and manufacturing validation remain future modules.
+
+See [Core architecture](docs/architecture.md) and the [40 mm example](examples/classic-40mm.json).
