@@ -237,3 +237,18 @@ OpenSCAD is required for the second command, not for generating the source.
 See [CAD documentation](docs/cad.md). This is **not** manufacturing CAD:
 STEP export, B-Rep solids, tolerances, water resistance, and mechanical
 validation remain unimplemented.
+
+## BlackMamba Luxury CAD v0.3
+
+A **separate experimental adapter** adds luxury styling, integrated hull-shaped
+lugs and an ornamental crown. Three colorways are supported: `obsidian-gold`,
+`titanium-ice` and `royal-purple`. Eight individual component selectors
+support separate OpenSCAD/STL exports.
+
+```bash
+python -c "from reloj_core.models import WatchSpec; from reloj_core.luxury import export_luxury_scad; export_luxury_scad(WatchSpec(), 'luxury.scad')"
+openscad -o luxury.stl luxury.scad
+```
+
+See [luxury adapter notes](docs/luxury-v03.md) for component export and
+engineering limitations. This is concept CAD, not a manufacturing assembly.
