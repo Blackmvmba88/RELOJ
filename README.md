@@ -1,116 +1,180 @@
-# ⚙️ RELOJ — Intelligent Parametric Watchmaker
+<p align="center">
+  <img src="https://img.shields.io/badge/RELOJ-Intelligent%20Parametric%20Watchmaker-0f766e?style=for-the-badge&logo=watchman&logoColor=white" alt="RELOJ" />
+</p>
 
-> **Describe el tiempo que quieres llevar. RELOJ diseña el reloj.**
+# ⚙️ RELOJ
 
-```
-    ┌─────────────────────────────────────────┐
-    │   ⌚  R E L O J                           │
-    │   Intelligent Parametric Watchmaker      │
-    │   ─────────────────────────────────────  │
-    │   "El tiempo no se mide. Se diseña."     │
-    └─────────────────────────────────────────┘
-```
+> Describe the time you want to wear. RELOJ designs the watch.
 
----
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Blackmvmba88/RELOJ/main/assets/watch-hero.svg" alt="RELOJ concept" />
+</p>
 
-## 🌌 MANIFIESTO
+## 🌿 Vision
 
-No eliges un reloj de un catálogo. **Lo describes, y el reloj existe.**
+RELOJ is a parametric watch design system that turns a brief, a photo, or a moodboard into a complete watch concept. It does not simply generate a visual; it understands constraints: style, size, material, mechanism, legibility, comfort, and cost.
 
-RELOJ es un estudio paramétrico de relojería total: escribes lo que imaginas —o subes una foto de referencia— y el sistema **parametriza TODO**: carátula, caja, correa, mecanismo, materiales, tolerancias, coste y variantes. Desde un digital sencillo hasta un tourbillon de lujo.
-
-> **Parametrizar es el verbo. Diseñar es la consecuencia.**
+From a Standard digital watch to a luxury design with complications, RELOJ can move between design spaces with a single idea: the watch must be coherent, wearable, and intentional.
 
 ---
 
-## 🧠 EL CEREBRO (lo que RELOJ "piensa")
+## 🧠 What RELOJ does
 
-RELOJ no dibuja al azar. **Razona bajo restricciones**:
+RELOJ is built around a simple principle:
 
-| Restricción   | Qué decide                                  |
-|---------------|---------------------------------------------|
-| 📏 Tamaño      | Diámetro, grosor, asas, ergonomía           |
-| 🎨 Estilo      | Vestir, deportivo, piloto, buceo, minimal   |
-| 👁️ Legibilidad | Contraste, índices, tipografía, agujas      |
-| 🪨 Materiales  | Acero, titanio, oro, cerámica, zafiro       |
-| 💰 Coste       | Gama de precio y compromisos técnicos       |
-| ⚙️ Mecanismo   | Cuarzo, automático, manual, tourbillon      |
+- Input: text, photo, sketch, or reference image
+- Interpretation: detect visual and functional parameters
+- Generation: create dial, case, strap, movement logic, and material system
+- Variation: produce multiple coherent versions from one concept
+- Optimization: adapt to budget, style, and use case
 
-Cada elección es **ajustable, trazable y reversible**.
+This makes RELOJ more than a generator. It becomes a design engine for watch concepts.
 
 ---
 
-## 📸 MODO FOTO — *"Dibújame esto"*
+## 🛠️ Core product logic
 
-Sube una foto de un reloj (o un boceto, o un moodboard) y RELOJ:
+### 1. Parametric design
+The system models dimensions, materials, proportions, indices, hands, case profile, and strap geometry as editable variables.
 
-1. **Detecta** caja, esfera, índices, agujas, correa y paleta.
-2. **Extrae** los parámetros subyacentes (diámetro estimado, tipo de bisel, estilo de agujas…).
-3. **Reconstruye** un modelo paramétrico editable.
-4. **Propone** variantes: mismo ADN, distinto tiempo.
+### 2. Visual understanding
+Given a photo or reference, RELOJ can infer:
 
-> *De una foto a un plano. De un plano a mil variantes.*
+- case diameter and profile
+- dial layout
+- index style
+- bezel presence and shape
+- strap type and width
+- watch family: sports, dress, diving, pilot, minimalist, luxury
 
----
+### 3. Intelligent constraints
+Each concept is filtered by:
 
-## 🛠️ PIPELINE PARAMÉTRICO
+- size / ergonomics
+- readability
+- aesthetic family
+- movement type
+- manufacturing viability
+- cost level
 
-```
-  Texto / Foto
-       │
-       ▼
- ┌───────────────┐
- │  PARSER       │  lenguaje natural → parámetros
- └───────┬───────┘
-         ▼
- ┌───────────────┐
- │  MOTOR DE     │  restricciones + estilo + coste
- │  RESTRICCIONES│
- └───────┬───────┘
-         ▼
- ┌───────────────┐
- │  GENERADOR    │  carátula · caja · correa · mecanismo
- │  PARAMÉTRICO  │
- └───────┬───────┘
-         ▼
- ┌───────────────┐
- │  RENDER +     │  imágenes, planos, variantes
- │  VARIANTES    │
- └───────────────┘
-```
+### 4. Variants, not duplicates
+The same design DNA can generate multiple versions:
+
+- standard edition
+- luxury edition
+- digital edition
+- mechanical concept
+- premium collector version
 
 ---
 
-## 🗺️ ROADMAP
+## 📸 Workflow
 
-- **MVP** — Carátulas, cajas y correas configurables + modo foto básico.
-- **Siguiente** — Mecanismos y simulación (reserva de marcha, precisión, tolerancias).
-- **Avanzado** — Complicaciones de lujo: tourbillon, calendario perpetuo, sonería.
-
-> El tourbillon es el **horizonte**, no la línea de salida. Lo que aún no se simula, se declara como visión.
-
----
-
-## ☕ PERSONALIDAD
-
-*Cada mañana, una nueva complicación.*
-
-RELOJ desayuna restricciones y escupe variantes. También es una forma simpática de hablar de cómo el reloj obtiene energía: **cuerda manual, movimiento del brazo o carga solar**.
-
----
-
-## ⚡ PRINCIPIOS DE DISEÑO
-
-1. **Restricciones primero** — Tamaño, legibilidad, coste y mecanismo guían cada propuesta.
-2. **Paramétrico, no arbitrario** — Cada elección es ajustable y trazable.
-3. **Foto → parámetros → variantes** — Nada se copia; todo se comprende.
-4. **Honestidad de alcance** — Lo que no se simula, se declara como visión.
-
----
-
-```
-   "Describe el tiempo que quieres llevar.
-    RELOJ diseña el reloj."
+```text
+Text / image / moodboard
+        │
+        ▼
+  Parse concept
+        │
+        ▼
+  Extract watch parameters
+        │
+        ▼
+  Evaluate style + constraints
+        │
+        ▼
+  Generate watch variants
+        │
+        ▼
+  Render and optimize
 ```
 
-**⌚ RELOJ** — *El tiempo no se mide. Se diseña.*
+---
+
+## ✨ Feature set
+
+- Parametric watch generation from prompt
+- Photo-to-watch reconstruction pipeline
+- Dial, case, and strap generation
+- Material and cost logic
+- Style family rules
+- Luxury and standard design variants
+- Complication-oriented concept generation
+- Future mechanism and performance simulation
+
+---
+
+## 🧭 Product direction
+
+The project evolves in layers:
+
+### MVP
+- watch case generation
+- dial concept generator
+- strap and material catalog
+- photo-inspired reference matching
+
+### Advanced
+- movement logic simulation
+- power reserve and precision estimation
+- comfort and wearability evaluation
+- complication concepts
+
+### Premium vision
+- tourbillon concept generation
+- calendar and perpetual complication modeling
+- luxury collector series generation
+- fabrication-aware watch design
+
+> The tourbillon is not the first step; it is the horizon of the project.
+
+---
+
+## 🏗️ Why this matters
+
+The world of luxury and fashion watches is full of symbolic language: precision, status, craftsmanship, and identity. RELOJ explores the intersection between design automation and watchmaking culture.
+
+It aims to make the process of watch ideation intelligent, expressive, and scalable.
+
+---
+
+## 🌱 Positioning
+
+RELOJ is not just a watch idea generator.
+
+It is a smart design system for:
+
+- custom luxury watch concepts
+- digital and analog product exploration
+- brand identity prototyping
+- watch design experimentation
+- parametric generation of collectible timepieces
+
+---
+
+## 🚀 Roadmap
+
+- [ ] Watch family generation engine
+- [ ] Visual prompt-to-watch parser
+- [ ] Parametric case and dial model
+- [ ] Material and cost logic
+- [ ] Variant generation engine
+- [ ] Luxury complication concepts
+- [ ] Mechanical simulation module
+
+---
+
+## 🕰️ Manifesto
+
+No one chooses a watch from a catalog only because it exists. They wear what tells a story.
+
+RELOJ helps turn that story into shape, proportion, material, and meaning.
+
+> The time you want to wear is not just measured. It is designed.
+
+---
+
+<p align="center">
+  <strong>⌚ RELOJ</strong><br>
+  Intelligent Parametric Watchmaker
+</p>
